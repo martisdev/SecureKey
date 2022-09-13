@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iSecureKey", "iSecureKey\iSecureKey.csproj", "{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfSslNet", "..\WolfSslNet\WolfSslNet.csproj", "{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		DLL Debug|Any CPU = DLL Debug|Any CPU
+		DLL Debug|x64 = DLL Debug|x64
+		DLL Debug|x86 = DLL Debug|x86
+		DLL Release|Any CPU = DLL Release|Any CPU
+		DLL Release|x64 = DLL Release|x64
+		DLL Release|x86 = DLL Release|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.Debug|x64.Build.0 = Debug|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.Debug|x86.Build.0 = Debug|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.DLL Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.DLL Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.DLL Debug|x64.ActiveCfg = Debug|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.DLL Debug|x64.Build.0 = Debug|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.DLL Debug|x86.ActiveCfg = Debug|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.DLL Debug|x86.Build.0 = Debug|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.DLL Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.DLL Release|Any CPU.Build.0 = Release|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.DLL Release|x64.ActiveCfg = Release|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.DLL Release|x64.Build.0 = Release|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.DLL Release|x86.ActiveCfg = Release|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.DLL Release|x86.Build.0 = Release|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.Release|x64.ActiveCfg = Release|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.Release|x64.Build.0 = Release|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.Release|x86.ActiveCfg = Release|Any CPU
+		{B3105634-2FA0-4F3F-9DC8-F27E3B6604C2}.Release|x86.Build.0 = Release|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.Debug|x64.Build.0 = Debug|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.Debug|x86.Build.0 = Debug|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.DLL Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.DLL Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.DLL Debug|x64.ActiveCfg = Debug|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.DLL Debug|x64.Build.0 = Debug|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.DLL Debug|x86.ActiveCfg = Debug|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.DLL Debug|x86.Build.0 = Debug|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.DLL Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.DLL Release|Any CPU.Build.0 = Release|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.DLL Release|x64.ActiveCfg = Release|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.DLL Release|x64.Build.0 = Release|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.DLL Release|x86.ActiveCfg = Release|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.DLL Release|x86.Build.0 = Release|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.Release|x64.ActiveCfg = Release|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.Release|x64.Build.0 = Release|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.Release|x86.ActiveCfg = Release|Any CPU
+		{5B93BF6A-34C8-4F2E-9B4E-66CEB511DBD7}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCF6063E-7218-4715-B731-9E663D30DE69}
+	EndGlobalSection
+EndGlobal
