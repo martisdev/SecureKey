@@ -5,7 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 
 
-namespace iSecureKey
+namespace SecureKey
 {
     public enum LoginOptions
     {

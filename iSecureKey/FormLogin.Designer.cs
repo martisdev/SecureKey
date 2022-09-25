@@ -1,4 +1,4 @@
-﻿namespace iSecureKey
+﻿namespace SecureKey
 {
     partial class FormLogin
     {
@@ -83,7 +83,7 @@
             // 
             // 
             // 
-            this.txtPassword.CustomButton.Image = global::iSecureKey.Properties.Resources.eyeX25;
+            this.txtPassword.CustomButton.Image = global::SecureKey.Properties.Resources.eyeX25;
             this.txtPassword.CustomButton.Location = new System.Drawing.Point(213, 1);
             this.txtPassword.CustomButton.Name = "";
             this.txtPassword.CustomButton.Size = new System.Drawing.Size(29, 29);

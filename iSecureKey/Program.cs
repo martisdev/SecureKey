@@ -4,10 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace iSecureKey
+namespace SecureKey
 {
     static class Program
     {
+        
+        /*
+         * For testing
+         * User: msc
+         * Psw: 12345
+         */
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

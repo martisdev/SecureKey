@@ -5,9 +5,9 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 
-using iGrid.WolfSslNet;
+using MSC.WolfSslNet;
 
-namespace iSecureKey
+namespace SecureKey
 {
     public partial class MainForm : MetroFramework.Forms.MetroForm
     {
@@ -43,8 +43,7 @@ namespace iSecureKey
         private void btnNew_Click(object sender, EventArgs e)
         {
             if(LbNew.Visible)
-            {
-                
+            {                
                 LbNew.Visible = false;
                 RefreshComboBox();
             }
@@ -237,6 +236,10 @@ namespace iSecureKey
                 txtPassword.Text = strPassword;
         }
 
+        private void LinkMenu_Click(object sender, EventArgs e)
+        {
+            MnuPopUp.Show(Cursor.Position);
+        }
 
         #endregion
 
@@ -267,8 +270,9 @@ namespace iSecureKey
 
         }
 
-        #endregion
 
-       
+
+        #endregion
+        
     }
 }

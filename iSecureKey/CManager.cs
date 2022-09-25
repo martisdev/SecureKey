@@ -4,7 +4,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace iSecureKey
+namespace SecureKey
 {
     public static class CManager
     {
