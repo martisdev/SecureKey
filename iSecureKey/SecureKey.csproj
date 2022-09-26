@@ -135,6 +135,8 @@
     <Content Include="images\key-16.png" />
     <Content Include="images\power-offX25.png" />
     <Content Include="images\key.ico" />
+    <Content Include="installer\installer_SecureKey.iss" />
+    <Content Include="installer\installer_SecureKey_test.iss" />
     <None Include="Resources\bar.bmp" />
   </ItemGroup>
   <ItemGroup>
