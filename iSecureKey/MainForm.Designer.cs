@@ -266,6 +266,9 @@
             // 
             // txtOtherText
             // 
+            this.txtOtherText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
@@ -285,7 +288,7 @@
             this.txtOtherText.Name = "txtOtherText";
             this.txtOtherText.PasswordChar = '\0';
             this.txtOtherText.PromptText = "Enter some text to save";
-            this.txtOtherText.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtOtherText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtOtherText.SelectedText = "";
             this.txtOtherText.SelectionLength = 0;
             this.txtOtherText.SelectionStart = 0;
