@@ -47,17 +47,15 @@
             this.btnNew = new MetroFramework.Controls.MetroTile();
             this.txtPassword = new MetroFramework.Controls.MetroTextBox();
             this.LbNew = new MetroFramework.Controls.MetroLabel();
-            this.LinkChangeCredentials = new MetroFramework.Controls.MetroLink();
-            this.LbVersion = new MetroFramework.Controls.MetroLabel();
             this.LinkMenu = new MetroFramework.Controls.MetroLink();
             this.btnExit = new MetroFramework.Controls.MetroTile();
             this.btnGeneratePsw = new MetroFramework.Controls.MetroTile();
             this.MnuPopUp = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuChangeCredentials = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuVersion = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuPopUp.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -391,26 +389,6 @@
             this.LbNew.UseStyleColors = true;
             this.LbNew.Visible = false;
             // 
-            // LinkChangeCredentials
-            // 
-            this.LinkChangeCredentials.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LinkChangeCredentials.Location = new System.Drawing.Point(24, 488);
-            this.LinkChangeCredentials.Name = "LinkChangeCredentials";
-            this.LinkChangeCredentials.Size = new System.Drawing.Size(142, 23);
-            this.LinkChangeCredentials.TabIndex = 18;
-            this.LinkChangeCredentials.Text = "Change credentials";
-            this.LinkChangeCredentials.UseSelectable = true;
-            this.LinkChangeCredentials.Click += new System.EventHandler(this.LinkChangeCredentials_Click);
-            // 
-            // LbVersion
-            // 
-            this.LbVersion.Location = new System.Drawing.Point(416, 489);
-            this.LbVersion.Name = "LbVersion";
-            this.LbVersion.Size = new System.Drawing.Size(216, 21);
-            this.LbVersion.TabIndex = 19;
-            this.LbVersion.Text = "Version 1.2";
-            this.LbVersion.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // LinkMenu
             // 
             this.LinkMenu.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -455,43 +433,45 @@
             // MnuPopUp
             // 
             this.MnuPopUp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5});
+            this.mnuChangeCredentials,
+            this.toolStripSeparator1,
+            this.mnuVersion,
+            this.toolStripSeparator2,
+            this.mnuExit});
             this.MnuPopUp.Name = "MnuPopUp";
-            this.MnuPopUp.Size = new System.Drawing.Size(181, 114);
+            this.MnuPopUp.Size = new System.Drawing.Size(178, 82);
             // 
-            // toolStripMenuItem1
+            // mnuChangeCredentials
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem1.Text = "toolStripMenuItem1";
+            this.mnuChangeCredentials.Image = ((System.Drawing.Image)(resources.GetObject("mnuChangeCredentials.Image")));
+            this.mnuChangeCredentials.Name = "mnuChangeCredentials";
+            this.mnuChangeCredentials.Size = new System.Drawing.Size(180, 22);
+            this.mnuChangeCredentials.Text = "Change Credentials";
+            this.mnuChangeCredentials.Click += new System.EventHandler(this.mnuChangeCredentials_Click);
             // 
-            // toolStripMenuItem2
+            // toolStripSeparator1
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem2.Text = "toolStripMenuItem2";
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
-            // toolStripMenuItem3
+            // mnuVersion
             // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem3.Text = "toolStripMenuItem3";
+            this.mnuVersion.Name = "mnuVersion";
+            this.mnuVersion.Size = new System.Drawing.Size(180, 22);
+            this.mnuVersion.Text = "Version 0.0";
             // 
-            // toolStripMenuItem4
+            // toolStripSeparator2
             // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem4.Text = "toolStripMenuItem4";
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
-            // toolStripMenuItem5
+            // mnuExit
             // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem5.Text = "toolStripMenuItem5";
+            this.mnuExit.Image = global::SecureKey.Properties.Resources.power_offX25;
+            this.mnuExit.Name = "mnuExit";
+            this.mnuExit.Size = new System.Drawing.Size(180, 22);
+            this.mnuExit.Text = "Exit";
+            this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
             // 
             // MainForm
             // 
@@ -501,8 +481,6 @@
             this.ClientSize = new System.Drawing.Size(695, 518);
             this.Controls.Add(this.LinkMenu);
             this.Controls.Add(this.btnGeneratePsw);
-            this.Controls.Add(this.LbVersion);
-            this.Controls.Add(this.LinkChangeCredentials);
             this.Controls.Add(this.LbNew);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.btnNew);
@@ -553,16 +531,14 @@
         private MetroFramework.Controls.MetroTile btnNew;
         private MetroFramework.Controls.MetroTextBox txtPassword;
         private MetroFramework.Controls.MetroLabel LbNew;
-        private MetroFramework.Controls.MetroLink LinkChangeCredentials;
-        private MetroFramework.Controls.MetroLabel LbVersion;
         private MetroFramework.Controls.MetroTile btnGeneratePsw;
         private MetroFramework.Controls.MetroLink LinkMenu;
         private System.Windows.Forms.ContextMenuStrip MnuPopUp;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem mnuExit;
+        private System.Windows.Forms.ToolStripMenuItem mnuChangeCredentials;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem mnuVersion;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }
 

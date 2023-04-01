@@ -23,7 +23,6 @@ namespace SecureKey
 
         #endregion
 
-
         #region PROPERTIES
         private LoginOptions Option
         {
@@ -118,6 +117,7 @@ namespace SecureKey
         }
 
         #endregion
+        
         #region METHODS
         public DialogResult ShowDialog(IWin32Window owner ,LoginOptions mOption = LoginOptions.LoginUser)
         {

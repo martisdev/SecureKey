@@ -144,13 +144,14 @@ namespace SecureKey
             this.txtPassword.Text   = string.Empty;
             this.txtOtherText.Text  = string.Empty;            
             CManager.ListFiles.Remove(CurrentData);
+            CManager.SaveDocument();
             RefreshComboBox();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
-        {
-            LbVersion.Text = string.Format("Version: {0}", Assembly.GetExecutingAssembly().GetName().Version.ToString());
-            RefreshComboBox();                    
+        {            
+            mnuVersion.Text = string.Format("Version: {0}", Assembly.GetExecutingAssembly().GetName().Version.ToString());
+            RefreshComboBox();            
         }
 
         private void txtPassword_ButtonClick(object sender, EventArgs e)
@@ -173,29 +174,6 @@ namespace SecureKey
                     MetroMessageBox.Show(this, "Address is incorrect", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, 100);
             }
 
-        }
-
-        private void LinkChangeCredentials_Click(object sender, EventArgs e)
-        {
-            if (MetroMessageBox.Show(this, "Sure, do you want change the credentials?", "Attention", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, 100) == DialogResult.Cancel)
-                return;
-
-            FormLogin DialogLogin = new FormLogin();
-            DialogLogin.ShowDialog(this,LoginOptions.CheckUser);
-            
-            //Enter the credentials
-            if (DialogLogin.DialogResult == DialogResult.OK)
-            {
-                DialogLogin.Dispose();
-                
-                FormLogin DialogChange = new FormLogin();
-                if (DialogChange.ShowDialog(this, LoginOptions.ChangeCredentials) == DialogResult.OK)
-                    btnSave.Enabled = true;
-                
-                else
-                    MetroMessageBox.Show(this, "No changes in the credential", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, 100);
-            }
-                
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -241,6 +219,16 @@ namespace SecureKey
             MnuPopUp.Show(Cursor.Position);
         }
 
+        private void mnuExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void mnuChangeCredentials_Click(object sender, EventArgs e)
+        {
+            ChangeCredentials();
+        }
+
         #endregion
 
         #region METHODS
@@ -270,9 +258,29 @@ namespace SecureKey
 
         }
 
+        private void ChangeCredentials()
+        {
+            if (MetroMessageBox.Show(this, "Sure, do you want change the credentials?", "Attention", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, 100) == DialogResult.Cancel)
+                return;
 
+            FormLogin DialogLogin = new FormLogin();
+            DialogLogin.ShowDialog(this, LoginOptions.CheckUser);
 
+            //Enter the credentials
+            if (DialogLogin.DialogResult == DialogResult.OK)
+            {
+                DialogLogin.Dispose();
+
+                FormLogin DialogChange = new FormLogin();
+                if (DialogChange.ShowDialog(this, LoginOptions.ChangeCredentials) == DialogResult.OK)
+                    btnSave.Enabled = true;
+
+                else
+                    MetroMessageBox.Show(this, "No changes in the credential", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, 100);
+            }
+        }
         #endregion
-        
+
+
     }
 }
