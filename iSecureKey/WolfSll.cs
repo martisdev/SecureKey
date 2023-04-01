@@ -1,5 +1,5 @@
-﻿using iGrid.WolfSslNet;
-namespace iSecureKey
+﻿using MSC.WolfSslNet;
+namespace SecureKey
 {
     public class WolfSll
     {

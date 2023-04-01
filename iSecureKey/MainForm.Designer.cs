@@ -1,4 +1,4 @@
-﻿namespace iSecureKey
+﻿namespace SecureKey
 {
     partial class MainForm
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.ComboBoxList = new MetroFramework.Controls.MetroComboBox();
             this.txtName = new MetroFramework.Controls.MetroTextBox();
@@ -46,10 +47,16 @@
             this.btnNew = new MetroFramework.Controls.MetroTile();
             this.txtPassword = new MetroFramework.Controls.MetroTextBox();
             this.LbNew = new MetroFramework.Controls.MetroLabel();
-            this.LinkChangeCredentials = new MetroFramework.Controls.MetroLink();
-            this.LbVersion = new MetroFramework.Controls.MetroLabel();
-            this.btnGeneratePsw = new MetroFramework.Controls.MetroTile();
+            this.LinkMenu = new MetroFramework.Controls.MetroLink();
             this.btnExit = new MetroFramework.Controls.MetroTile();
+            this.btnGeneratePsw = new MetroFramework.Controls.MetroTile();
+            this.MnuPopUp = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.mnuChangeCredentials = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuVersion = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuPopUp.SuspendLayout();
             this.SuspendLayout();
             // 
             // ComboBoxList
@@ -155,7 +162,7 @@
             // 
             // 
             // 
-            this.txtURL.CustomButton.Image = global::iSecureKey.Properties.Resources.globeX25;
+            this.txtURL.CustomButton.Image = global::SecureKey.Properties.Resources.globeX25;
             this.txtURL.CustomButton.Location = new System.Drawing.Point(403, 1);
             this.txtURL.CustomButton.Name = "";
             this.txtURL.CustomButton.Size = new System.Drawing.Size(29, 29);
@@ -257,6 +264,9 @@
             // 
             // txtOtherText
             // 
+            this.txtOtherText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
@@ -276,7 +286,7 @@
             this.txtOtherText.Name = "txtOtherText";
             this.txtOtherText.PasswordChar = '\0';
             this.txtOtherText.PromptText = "Enter some text to save";
-            this.txtOtherText.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtOtherText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtOtherText.SelectedText = "";
             this.txtOtherText.SelectionLength = 0;
             this.txtOtherText.SelectionStart = 0;
@@ -333,7 +343,7 @@
             // 
             // 
             // 
-            this.txtPassword.CustomButton.Image = global::iSecureKey.Properties.Resources.eyeX25;
+            this.txtPassword.CustomButton.Image = global::SecureKey.Properties.Resources.eyeX25;
             this.txtPassword.CustomButton.Location = new System.Drawing.Point(403, 1);
             this.txtPassword.CustomButton.Name = "";
             this.txtPassword.CustomButton.Size = new System.Drawing.Size(29, 29);
@@ -379,45 +389,23 @@
             this.LbNew.UseStyleColors = true;
             this.LbNew.Visible = false;
             // 
-            // LinkChangeCredentials
+            // LinkMenu
             // 
-            this.LinkChangeCredentials.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LinkChangeCredentials.Location = new System.Drawing.Point(24, 488);
-            this.LinkChangeCredentials.Name = "LinkChangeCredentials";
-            this.LinkChangeCredentials.Size = new System.Drawing.Size(142, 23);
-            this.LinkChangeCredentials.TabIndex = 18;
-            this.LinkChangeCredentials.Text = "Change credentials";
-            this.LinkChangeCredentials.UseSelectable = true;
-            this.LinkChangeCredentials.Click += new System.EventHandler(this.LinkChangeCredentials_Click);
-            // 
-            // LbVersion
-            // 
-            this.LbVersion.Location = new System.Drawing.Point(416, 489);
-            this.LbVersion.Name = "LbVersion";
-            this.LbVersion.Size = new System.Drawing.Size(216, 21);
-            this.LbVersion.TabIndex = 19;
-            this.LbVersion.Text = "Version 1.2";
-            this.LbVersion.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // btnGeneratePsw
-            // 
-            this.btnGeneratePsw.ActiveControl = null;
-            this.btnGeneratePsw.Location = new System.Drawing.Point(656, 275);
-            this.btnGeneratePsw.Name = "btnGeneratePsw";
-            this.btnGeneratePsw.Size = new System.Drawing.Size(30, 30);
-            this.btnGeneratePsw.Style = MetroFramework.MetroColorStyle.Orange;
-            this.btnGeneratePsw.TabIndex = 20;
-            this.btnGeneratePsw.TileImage = global::iSecureKey.Properties.Resources.key_16;
-            this.btnGeneratePsw.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnGeneratePsw.UseSelectable = true;
-            this.btnGeneratePsw.UseTileImage = true;
-            this.btnGeneratePsw.Click += new System.EventHandler(this.btnGeneratePsw_Click);
+            this.LinkMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LinkMenu.Image = global::SecureKey.Properties.Resources.bars;
+            this.LinkMenu.ImageSize = 25;
+            this.LinkMenu.Location = new System.Drawing.Point(646, 30);
+            this.LinkMenu.Name = "LinkMenu";
+            this.LinkMenu.Size = new System.Drawing.Size(30, 30);
+            this.LinkMenu.TabIndex = 21;
+            this.LinkMenu.UseSelectable = true;
+            this.LinkMenu.Click += new System.EventHandler(this.LinkMenu_Click);
             // 
             // btnExit
             // 
             this.btnExit.ActiveControl = null;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(656, 31);
+            this.btnExit.Location = new System.Drawing.Point(582, 338);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(30, 30);
             this.btnExit.TabIndex = 15;
@@ -428,19 +416,74 @@
             this.btnExit.UseTileImage = true;
             this.btnExit.Click += new System.EventHandler(this.metroTileExit_Click);
             // 
+            // btnGeneratePsw
+            // 
+            this.btnGeneratePsw.ActiveControl = null;
+            this.btnGeneratePsw.Location = new System.Drawing.Point(656, 275);
+            this.btnGeneratePsw.Name = "btnGeneratePsw";
+            this.btnGeneratePsw.Size = new System.Drawing.Size(30, 30);
+            this.btnGeneratePsw.Style = MetroFramework.MetroColorStyle.Orange;
+            this.btnGeneratePsw.TabIndex = 20;
+            this.btnGeneratePsw.TileImage = global::SecureKey.Properties.Resources.key_16;
+            this.btnGeneratePsw.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGeneratePsw.UseSelectable = true;
+            this.btnGeneratePsw.UseTileImage = true;
+            this.btnGeneratePsw.Click += new System.EventHandler(this.btnGeneratePsw_Click);
+            // 
+            // MnuPopUp
+            // 
+            this.MnuPopUp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuChangeCredentials,
+            this.toolStripSeparator1,
+            this.mnuVersion,
+            this.toolStripSeparator2,
+            this.mnuExit});
+            this.MnuPopUp.Name = "MnuPopUp";
+            this.MnuPopUp.Size = new System.Drawing.Size(178, 82);
+            // 
+            // mnuChangeCredentials
+            // 
+            this.mnuChangeCredentials.Image = ((System.Drawing.Image)(resources.GetObject("mnuChangeCredentials.Image")));
+            this.mnuChangeCredentials.Name = "mnuChangeCredentials";
+            this.mnuChangeCredentials.Size = new System.Drawing.Size(180, 22);
+            this.mnuChangeCredentials.Text = "Change Credentials";
+            this.mnuChangeCredentials.Click += new System.EventHandler(this.mnuChangeCredentials_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // mnuVersion
+            // 
+            this.mnuVersion.Name = "mnuVersion";
+            this.mnuVersion.Size = new System.Drawing.Size(180, 22);
+            this.mnuVersion.Text = "Version 0.0";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            // 
+            // mnuExit
+            // 
+            this.mnuExit.Image = global::SecureKey.Properties.Resources.power_offX25;
+            this.mnuExit.Name = "mnuExit";
+            this.mnuExit.Size = new System.Drawing.Size(180, 22);
+            this.mnuExit.Text = "Exit";
+            this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(695, 518);
+            this.Controls.Add(this.LinkMenu);
             this.Controls.Add(this.btnGeneratePsw);
-            this.Controls.Add(this.LbVersion);
-            this.Controls.Add(this.LinkChangeCredentials);
             this.Controls.Add(this.LbNew);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.btnNew);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtOtherText);
@@ -455,6 +498,7 @@
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.ComboBoxList);
+            this.Controls.Add(this.btnExit);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(695, 518);
             this.MinimumSize = new System.Drawing.Size(695, 518);
@@ -462,6 +506,7 @@
             this.Text = "Save secure information";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.MnuPopUp.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -486,9 +531,14 @@
         private MetroFramework.Controls.MetroTile btnNew;
         private MetroFramework.Controls.MetroTextBox txtPassword;
         private MetroFramework.Controls.MetroLabel LbNew;
-        private MetroFramework.Controls.MetroLink LinkChangeCredentials;
-        private MetroFramework.Controls.MetroLabel LbVersion;
         private MetroFramework.Controls.MetroTile btnGeneratePsw;
+        private MetroFramework.Controls.MetroLink LinkMenu;
+        private System.Windows.Forms.ContextMenuStrip MnuPopUp;
+        private System.Windows.Forms.ToolStripMenuItem mnuExit;
+        private System.Windows.Forms.ToolStripMenuItem mnuChangeCredentials;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem mnuVersion;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }
 

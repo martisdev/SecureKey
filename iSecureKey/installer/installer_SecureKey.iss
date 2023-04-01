@@ -5,7 +5,7 @@
 #define MyAppVersion "1.0"
 #define MyAppPublisher "Msc-soft.com"
 #define MyAppURL "https://msc-soft.com/"
-#define MyAppExeName "iSecureKey.exe"
+#define MyAppExeName "SecureKey.exe"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -34,7 +34,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\MSC Source\Windows_APP\iSecureKey\iSecureKey\bin\Release\iSecureKey.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\MSC Source\Windows_APP\iSecureKey\iSecureKey\bin\Release\SecureKey.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\MSC Source\Windows_APP\iSecureKey\iSecureKey\bin\Release\MetroFramework.Design.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\MSC Source\Windows_APP\iSecureKey\iSecureKey\bin\Release\MetroFramework.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\MSC Source\Windows_APP\iSecureKey\iSecureKey\bin\Release\MetroFramework.Fonts.dll"; DestDir: "{app}"; Flags: ignoreversion
@@ -44,7 +44,7 @@ Source: "C:\MSC Source\Windows_APP\iSecureKey\iSecureKey\bin\Release\dlls\wolfss
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
-Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}"
+;Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}"
 Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]

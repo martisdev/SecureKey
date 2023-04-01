@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace iSecureKey
+namespace SecureKey
 {
     [Serializable]
     public class CDataEncrypt

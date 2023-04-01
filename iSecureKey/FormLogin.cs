@@ -5,7 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 
 
-namespace iSecureKey
+namespace SecureKey
 {
     public enum LoginOptions
     {
@@ -22,7 +22,6 @@ namespace iSecureKey
         private Boolean FirtTime = false;
 
         #endregion
-
 
         #region PROPERTIES
         private LoginOptions Option
@@ -118,6 +117,7 @@ namespace iSecureKey
         }
 
         #endregion
+        
         #region METHODS
         public DialogResult ShowDialog(IWin32Window owner ,LoginOptions mOption = LoginOptions.LoginUser)
         {
